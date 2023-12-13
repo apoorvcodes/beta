@@ -2,7 +2,6 @@ import * as React from 'react'
 import Link from 'next/link'
 
 import { cn } from '@/lib/utils'
-import { auth } from '@/auth'
 import { clearChats } from '@/app/actions'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Sidebar } from '@/components/sidebar'
@@ -22,13 +21,15 @@ import { SidebarToggle } from './sidebar-toggle'
 import { ChatHistory } from './chat-history'
 
 async function UserOrLogin() {
-  const session = await auth()
+  const session = {
+    user: {}
+  }
   return (
     <>
       {session?.user ? (
         <>
           <SidebarMobile>
-            <ChatHistory userId={session.user.id} />
+            <ChatHistory userId={"abchsfef"} />
           </SidebarMobile>
           <SidebarToggle />
         </>

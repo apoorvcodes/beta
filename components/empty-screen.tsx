@@ -6,16 +6,16 @@ import { IconArrowRight } from '@/components/ui/icons'
 
 const exampleMessages = [
   {
-    heading: 'Explain technical concepts',
-    message: `What is a "serverless function"?`
+    heading: 'Checking netlify data',
+    message: `Hey connect summarise my netlify data`
   },
   {
-    heading: 'Summarize an article',
-    message: 'Summarize the following article for a 2nd grader: \n'
+    heading: 'Querying your google docs',
+    message: 'Hey connect explain and summarise me my latest google doc and what it was about: \n'
   },
   {
-    heading: 'Draft an email',
-    message: `Draft an email to my boss about the following: \n`
+    heading: 'Draft an doc using your chat',
+    message: `Hey connect check my chat on discord and create a google doc about it, specially inlcude:`
   }
 ]
 
@@ -24,14 +24,10 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
     <div className="mx-auto max-w-2xl px-4">
       <div className="rounded-lg border bg-background p-8">
         <h1 className="mb-2 text-lg font-semibold">
-          Welcome to Next.js AI Chatbot!
+          Welcome to Connect Mvp!
         </h1>
         <p className="mb-2 leading-normal text-muted-foreground">
-          This is an open source AI chatbot app template built with{' '}
-          <ExternalLink href="https://nextjs.org">Next.js</ExternalLink> and{' '}
-          <ExternalLink href="https://vercel.com/storage/kv">
-            Vercel KV
-          </ExternalLink>
+          This is a small demo for our yc application{' '}
           .
         </p>
         <p className="leading-normal text-muted-foreground">
