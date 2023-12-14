@@ -1,7 +1,6 @@
-
 import OpenAI from 'openai'
 import axios from 'axios'
-export const maxDuration = 5000
+
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 })
