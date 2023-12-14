@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/tooltip'
 import { IconArrowElbow, IconPlus } from '@/components/ui/icons'
 import { useRouter } from 'next/navigation'
+import toast from 'react-hot-toast'
 
 export interface PromptProps
   extends Pick<UseChatHelpers, 'input' | 'setInput'> {
@@ -40,6 +41,7 @@ export function PromptForm({
         if (!input?.trim()) {
           return
         }
+        toast.success('Due to gpt-4 facing lot of traffic our larger requests can take upto a minute to process! \n\n Thanks for testing!', {position: "top-center", duration: 3000})
         setInput('')
         await onSubmit(input)
       }}
@@ -80,6 +82,7 @@ export function PromptForm({
           <Tooltip>
             <TooltipTrigger asChild>
               <Button
+
                 type="submit"
                 size="icon"
                 disabled={isLoading || input === ''}
