@@ -16,7 +16,7 @@ import {
   DialogHeader,
   DialogTitle
 } from '@/components/ui/dialog'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Button } from './ui/button'
 import { Input } from './ui/input'
 import { toast } from 'react-hot-toast'
@@ -51,12 +51,18 @@ export function Chat({ id, initialMessages, className }: ChatProps) {
         }
       },
       onFinish() {
-        if (!path.includes('chat')) {
-          router.push(`/chat/${id}`, { shallow: true, scroll: false })
-          router.refresh()
-        }
+        
       }
     })
+    useEffect(() => {
+      toast.success(
+        "Hey YC, Welcome to the chat! \n We are getting many requests, so please be patient. \n It could take a few minutes to get a response. \n Thanks!",
+        {
+          duration: 2000,
+          position: "top-left",
+        }
+      );
+    }, [])
   return (
     <>
       <div className={cn('pb-[200px] pt-4 md:pt-10', className)}>
