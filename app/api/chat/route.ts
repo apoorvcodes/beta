@@ -25,7 +25,7 @@ export async function POST(req: Request, res: Response) {
   try {
   const resp = await axios.get("https://connai.up.railway.app/api/connect", {
     headers: {
-      "Authorization": `Bearer ${"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InljLmNvbm5haUBnbWFpbC5jb20iLCJ1c2VySWQiOiJjbHE0dTJmaXIwMDAwNXhiaDd1cDd0bWVtIiwiaWF0IjoxNzAyNTM2MTU1fQ.cFFtMW6E_vDC8NcbIGgFZm4AQc1CK1G4UQOJWlcGLDY"}`
+      "Authorization": `Bearer ${"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJla2hhc2luZ2gxNTA2MjAxMEBnbWFpbC5jb20iLCJ1c2VySWQiOiJjbHEyZWp6bGEwMDAwM2NueW1jeTBnaWliIiwiaWF0IjoxNzA0MDEyODA4fQ.0Gi2QsFHlvTbSuVCy1OnXJRpLwT-EIOJd6uMPUs9j"}`
     },
     data: {
       prompt: prompt,
