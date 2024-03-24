@@ -41,7 +41,7 @@ export function PromptForm({
         if (!input?.trim()) {
           return
         }
-        toast.success('Due to gpt-4 facing lot of traffic our larger requests can take upto a minute to process! \n\n Thanks for testing!', {position: "top-center", duration: 3000})
+        toast.success('We are running on a local mixtral model, could be slow at times!\n\n Thanks for testing!', {position: "top-center", duration: 3000})
         setInput('')
         await onSubmit(input)
       }}

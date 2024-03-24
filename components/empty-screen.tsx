@@ -27,7 +27,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
           Welcome to Connect Mvp!
         </h1>
         <p className="mb-2 leading-normal text-muted-foreground">
-          This is a small demo for our yc application{' '}
+          This is a small demo for our Ai grant application{' '}
           .
         </p>
         <p className="leading-normal text-muted-foreground">

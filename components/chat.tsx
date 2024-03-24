@@ -56,7 +56,7 @@ export function Chat({ id, initialMessages, className }: ChatProps) {
     })
     useEffect(() => {
       toast.success(
-        "Hey YC, Welcome to the chat! \n We are getting many requests, so please be patient. \n It could take a few minutes to get a response. \n Thanks!",
+        "Hey Ai grant, Welcome to the chat! \n We are getting many requests, so please be patient. \n It could take a few minutes to get a response. \n Thanks!",
         {
           duration: 2000,
           position: "top-left",
